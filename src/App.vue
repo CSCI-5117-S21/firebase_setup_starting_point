@@ -4,6 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/store">Data storage Test</router-link> |
       <router-link to="/auth">Auth Test</router-link> |
+      <router-link to="/useauth">Auth Test 2</router-link> |
       <router-link to="/files">File storage Test</router-link> |
       <router-link to="/about">About</router-link>
     </div>

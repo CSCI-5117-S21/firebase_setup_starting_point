@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Store from '../views/Store.vue'
 import Files from '../views/Files.vue'
 import Auth from '../views/Auth.vue'
+import UseAuth from '../views/UseAuth.vue'
 
 import {auth} from '../firebaseConfig.js'
 
@@ -32,6 +33,11 @@ const routes = [
     path: '/auth',
     name: 'Auth',
     component: Auth
+  },
+  {
+    path: '/useauth',
+    name: 'UseAuth',
+    component: UseAuth
   },
   {
     path: '/about',
