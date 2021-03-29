@@ -2,7 +2,9 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/store">Storage Test</router-link> |
+      <router-link to="/store">Data storage Test</router-link> |
+      <router-link to="/auth">Auth Test</router-link> |
+      <router-link to="/files">File storage Test</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
