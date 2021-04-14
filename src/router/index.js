@@ -5,6 +5,7 @@ import Store from '../views/Store.vue'
 import Files from '../views/Files.vue'
 import Auth from '../views/Auth.vue'
 import UseAuth from '../views/UseAuth.vue'
+import WordView from '../views/WordView.vue'
 
 import {auth} from '../firebaseConfig.js'
 
@@ -19,7 +20,10 @@ const routes = [
   {
     path: '/store',
     name: 'Store',
-    component: Store
+    component: Store,
+    meta: { // connects with the function later in this file.
+      requiresAuth: true
+    }
   },
   {
     path: '/files',
@@ -38,6 +42,12 @@ const routes = [
     path: '/useauth',
     name: 'UseAuth',
     component: UseAuth
+  },
+  {
+    path: '/word/:id',
+    name: 'WordView',
+    component: WordView,
+    props:  route => ({ id: route.params.id })
   },
   {
     path: '/about',

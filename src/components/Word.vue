@@ -1,6 +1,6 @@
 
 <template>
-    <div v-if="word">{{word.word}} (<span class="clickable" @click="like">{{word.likes}}</span>) &nbsp; (<span class="clickable" @click="doDelete">delete</span>) </div>
+    <div v-if="word"><router-link :to="{name:'WordView', params: {id: word.id}}"> {{word.word}}</router-link> (<span class="clickable" @click="like">{{word.likes}}</span>) &nbsp; (<span class="clickable" @click="doDelete">delete</span>) </div>
 </template>
 <script>
 // for more information about what's possible with firestore's API: https://firebase.google.com/docs/firestore/quickstart

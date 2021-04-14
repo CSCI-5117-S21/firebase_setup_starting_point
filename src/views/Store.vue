@@ -31,7 +31,7 @@ export default {
         addWord: function() {
             const newWordRecord = {word: this.newWord, likes: 0};
             // add a new word.
-            db.collection("words").add(newWordRecord);
+            db.collection("words").add(newWordRecord)
         },
     },
 }
